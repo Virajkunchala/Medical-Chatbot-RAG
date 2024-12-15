@@ -43,11 +43,11 @@ Dockerfile
 *.pth               # Example for PyTorch models
 *.ckpt              # Example for TensorFlow models
 
-# Data files (if data is too large, should be stored elsewhere, e.g., in cloud storage)
-data/
-*.csv
-*.json
-*.xlsx
+# # Data files (if data is too large, should be stored elsewhere, e.g., in cloud storage)
+# data/
+# *.csv
+# *.json
+# *.xlsx
 
 # .env or credentials files (be sure not to commit sensitive data)
 *.env
