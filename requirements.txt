@@ -1,0 +1,11 @@
+# transformers 
+# datasets 
+# faiss-cpu 
+# llama-index
+# streamlit 
+# fastapi
+# pandas
+
+# llama-index-llms-gemini
+# llama-index
+llama_index.embeddings.gemini

@@ -1,1 +1,67 @@
+# Python bytecode
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
 
+# Virtual environment directories
+venv/
+env/
+.env/
+medicalchatbot/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Environment variables (ensure sensitive data is not committed)
+.env
+
+# System files
+.DS_Store          # macOS
+Thumbs.db          # Windows
+
+# Logs and temporary files
+*.log
+*.bak
+*.swp
+
+# Python build directories
+build/
+dist/
+*.egg-info/
+
+# Docker files (if applicable)
+docker-compose.yml
+Dockerfile
+
+# AI Model files (if models are large, consider adding these to `.gitignore`)
+*.h5                # Example for Keras models
+*.pth               # Example for PyTorch models
+*.ckpt              # Example for TensorFlow models
+
+# Data files (if data is too large, should be stored elsewhere, e.g., in cloud storage)
+data/
+*.csv
+*.json
+*.xlsx
+
+# .env or credentials files (be sure not to commit sensitive data)
+*.env
+
+# Test coverage reports
+coverage/
+
+# IDE cache and project settings
+*.iml
+*.sublime-project
+*.sublime-workspace
+
+# PyCharm
+.idea/
+
+# Sensitive files (if applicable)
+*.pem        
