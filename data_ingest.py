@@ -7,9 +7,6 @@ from llama_index.llms.gemini import Gemini
 
 import os
 
-GOOGLE_API_KEY = "AIzaSyAk7npVIB2Eq2VjFcWj7LiHAqHVudksCQI"  # add your GOOGLE API key here
-os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
-
 # load documents
 documents = SimpleDirectoryReader(input_files=["MetaGPT_Meta_Programming.pdf"]).load_data()
 
@@ -20,7 +17,7 @@ nodes = splitter.get_nodes_from_documents(documents)
 
 model_name = "models/embedding-001"
 embed_model = GeminiEmbedding(
-    model_name=model_name, api_key=GOOGLE_API_KEY, title="this is a document"
+    model_name=model_name, api_key=os.environ["GOOGLE_API_KEY"], title="this is a document"
 )
 
 Settings.llm = Gemini( model="models/gemini-1.5-flash")
